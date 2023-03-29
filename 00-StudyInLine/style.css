@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 属性书写顺序：
+布局定位：display,position,float,clear,visiblity,overflow
+自身: width/height/margin/padding/border/background
+文本：color/font/text-decoration/text-align/vertical-align/white-space/break-word
+其他(css3)：centent/cursor/border-radius/box-shadow/text-shadow/backgound:linear-gradient... */
+/* .jdc {
+    display: block;
+    position: relative;
+    float: left;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    padding: 20px 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+} */
+
+/* 首先是版心，宽度测量后是1200px,每个版心居中对齐，定义为公共类 */
+.w {
+  width: 1200px;
+  margin: auto;
+}
+
+body {
+  background-color: #f3f5f7;
+  /* height: 3000px; */
+  /* 写高度是为了方面查看页面下面的设计 */
+}
+
+li {
+  list-style: none;
+  /* 取消列表前面的点 */
+}
+
+a {
+  text-decoration: none;
+  /* 取消链接的下划线 */
+}
+
+/* 清除浮动，有些情况中，页面某个模块的内容是不知道多少的，所以不能给高度，这个时候需要把这个模块的浮动清除掉，然后后面的就不会忽视这些浮动的内容挤上去了 */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+.header {
+  height: 42px;
+  /* background-color: lightblue; */
+  margin: 30px auto;
+  /* 给auto是为了应对.w中的auto被覆盖掉,表示左右居中 */
+}
+
+.logo {
+  float: left;
+  /* 一个盒子nav浮动了，前面的盒子logo也要浮动 */
+  height: 42px;
+  width: 198px;
+  /* background-color: darkcyan; */
+}
+
+.nav {
+  float: left;
+  margin-left: 60px;
+  /* ctrl+enter可以强制换行 */
+  /* 不需要给宽度，方便后续里面li继续扩充 */
+}
+
+.nav ul li {
+  float: left;
+  /* li是块元素，所以是上下排列的，改成浮动实现左右排列 */
+  margin: 0 15px;
+  /* 让li之间的空隙大一点 */
+}
+
+.nav ul li a {
+  display: block;
+  /* a是行内元素，没有宽度和高度，所以要转为块元素 */
+  height: 42px;
+  padding: 0 10px;
+  /* 上下是0，左右是10px，这样针对不同的内容字长，省去了设置宽度，用padding撑开 */
+  line-height: 42px;
+  /* 设置相对盒子而言垂直居中 */
+  font-size: 18px;
+  color: #050505;
+}
+
+.nav ul li a:hover {
+  border-bottom: 2px solid #00a4ff;
+  color: #00a4ff;
+}
+
+.search {
+  float: left;
+  /* 一浮全浮 */
+  height: 42px;
+  width: 421px;
+  /* background: #000; */
+  margin-left: 70px;
+}
+
+.search input {
+  float: left;
+  height: 40px;
+  width: 345px;
+  border: 1px solid #00a4ff;
+  border-right: 0;
+  color: #bfbfbf;
+  font-style: 14px;
+  padding-left: 15px;
+  /* padding是控件的内容相对控件的边缘的边距．margin是控件边缘相对父空间的边距． 在CSS中margin是指从自身边框到另一个容器边框之间的距离，就是容器外距离。 在CSS中padding是指自身边框到自身内部另一个容器边框之间的距离，就是容器内距离。 */
+  /* padding的设置也会撑大盒子，让盒子宽360+15，所以要修改盒子的宽度为360-15 */
+}
+
+.search button {
+  float: left;
+  width: 50px;
+  height: 42px;
+  border: 0;
+  /* 按钮默认有边框，要将其取消 */
+  /* 因为表单和按钮都是行内块元素，两者之间有缝隙，针对父容器的话，加起来宽度就超过了，摆不开了就移到下面去了 */
+  /* 可以两个都加个浮动 */
+  background: url(images/btn.png);
+}
+
+.user {
+  float: right;
+  line-height: 42px;
+  margin-right: 30px;
+  font-style: 14px;
+  color: #666;
+}
+
+.banner {
+  height: 420px;
+  background-color: #1c036c;
+  /* 不是background  */
+}
+
+.banner .w {
+  /* 不是.banner w */
+  height: 420px;
+  /* background-color: #fff; */
+  background: url(images/banner.png) no-repeat top center;
+  /* 不重复，对着顶部的，居中 */
+}
+
+.subnav {
+  float: left;
+  height: 420px;
+  width: 190px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.subnav ul li {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+}
+
+.subnav ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.subnav ul li a:hover {
+  color: #00a4ff;
+}
+.subnav ul li a span {
+  float: right;
+}
+
+.course {
+  float: right;
+  /* 刚好设置成左右浮动 */
+  margin-top: 50px;
+  /* 浮动的盒子不会有外边距合并的问题 */
+  width: 230px;
+  height: 300px;
+  background-color: #fff;
+}
+
+.course h2 {
+  height: 48px;
+  background-color: #9bceea;
+  text-align: center;
+  line-height: 48px;
+  font-style: 18px;
+  color: #fff;
+}
+
+.course .bd {
+  padding: 0 20px;
+}
+
+.bd ul li {
+  padding: 14px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.bd ul li h4 {
+  font-size: 16px;
+  color: #4e4e4e;
+}
+
+.bd ul li p {
+  font-size: 14px;
+  color: #a5a5a5;
+}
+
+.bd .more {
+  display: block;
+  height: 38px;
+  border: 1px solid #00a4ff;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 38px;
+  font-size: 16px;
+  color: #00a4ff;
+  font-weight: 700;
+  /* 加粗 */
+}
+
+.goods {
+  height: 60px;
+  background-color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+  line-height: 60px;
+  /* 父亲里面设置行高，那么里面的三个孩子也能继承这个行高，实现居中对齐 */
+}
+
+.goods h3 {
+  float: left;
+  margin-left: 30px;
+  font-size: 16px;
+  color: #00a4ff;
+}
+
+.goods ul {
+  float: left;
+  margin-left: 30px;
+}
+
+.goods ul li {
+  float: left;
+  /* 这样可以实现ul里的li也横行排列 */
+}
+
+.goods ul li a {
+  padding: 0 30px;
+  font-size: 16px;
+  color: #050505;
+  border-left: 1px solid #bfbfbf;
+}
+.goods .mod {
+  float: right;
+  margin-right: 30px;
+  font-size: 14px;
+  color: #00a4ff;
+}
+
+.box {
+  margin-top: 30px;
+}
+
+.box-hd {
+  height: 40px;
+}
+
+.box-hd h3 {
+  float: left;
+  font-size: 20px;
+  color: #050505;
+}
+
+.box-hd a {
+  float: right;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.box-bd ul {
+  width: 1225px;
+  /* 设置太宽了不好，会把页面突出来 */
+}
+.box-bd ul li {
+  /* 父相 */
+  position: relative;
+  float: left;
+  width: 228px;
+  height: 270px;
+  background-color: #fff;
+  margin-right: 15px;
+  /* 此时会放不下然后有一个盒子掉下来，针对这个可以把父亲(UL)设置的足够宽，不会掉下来就行 */
+  margin-bottom: 15px;
+}
+
+.box-bd ul li > img {
+  /* 表示只让亲儿子为100% */
+  width: 100%;
+}
+
+.box-bd ul li em {
+  /* 子绝 */
+  position: absolute;
+  top: 4px;
+  right: -4px;
+}
+
+.box-bd ul li h4 {
+  margin: 20px 20px 20px 25px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.box-bd .info {
+  margin: 0 20px 0 25px;
+  font-size: 12px;
+  color: #c6c6c6;
+}
+
+.box-bd .info span {
+  color: #ffb798;
+}
+
+.footer {
+  height: 415px;
+  background-color: #fff;
+}
+
+.footer .w {
+  padding-top: 35px;
+  /* 用margin-top有外边距合并的问题：当上下相邻的两个块元素相遇时，如果上面的元素有下外边距margin-bottom，下面的元素有上外边距margin-top，则他们之间的垂直间距不是margin-bottom与margin-top之和，而是两者中的较大者。这种现象被称为相邻块元素垂直外边距的合并（也称外边距塌陷），可以为父元素定义1像素的上边框或上内边距，也可以为父元素添加overflow:hidden（常用） */
+}
+
+.copyright {
+  float: left;
+}
+
+.copyright p {
+  padding: 25px 0;
+  font-size: 16px;
+  color: #666666;
+}
+
+.copyright a {
+  display: block;
+  width: 120px;
+  height: 35px;
+  border: 1px solid #00a4ff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 35px;
+  color: #00a4ff;
+}
+
+.links {
+  float: right;
+}
+
+.links dl {
+  float: left;
+  margin-left: 100px;
+}
+.links dl dt {
+  font-size: 16px;
+  color: #050505;
+  margin-bottom: 5px;
+}
+
+.links dl dd a {
+  font-size: 12px;
+  color: #050505;
+}

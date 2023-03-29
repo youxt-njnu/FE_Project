@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #333;
+      }
+
+      .map {
+        position: relative;
+        width: 747px;
+        height: 616px;
+        background: url(media/map.png) no-repeat;
+        margin: 0 auto;
+        /* 实现居中对齐 */
+      }
+
+      .city {
+        position: absolute;
+        /* 子绝父相 */
+        top: 227px;
+        right: 193px;
+        color: #fff;
+      }
+
+      .tb {
+        top: 491px;
+        /* 如果设置bottom，还是会优先执行city的top，这边修改top就行 */
+        right: 80px;
+      }
+      .dotted {
+        width: 8px;
+        height: 8px;
+        background-color: #09f;
+        border-radius: 50%;
+        /* 作为原始的原型原点 */
+      }
+
+      /* 选择了前缀是pulse的所有类，这边的权重是10+1+10=21 */
+      .city div[class^="pulse"] {
+        /* 保证我们小波纹在父盒子里面水平垂直居中 放大之后就会中心向四周发散 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8px;
+        height: 8px;
+        box-shadow: 0 0 12px #009dfd;
+        border-radius: 50%;
+        animation: pulse 1.2s linear infinite;
+      }
+
+      /* 实现后两个波纹一级一级的出来，如果直接写.pulse2的话权重只有10，比不上上面不加延迟的权重，所以这里又加上了.city div  */
+      .city div.pulse2 {
+        animation-delay: 0.4s;
+      }
+
+      .city div.pulse3 {
+        animation-delay: 0.8s;
+      }
+
+      /*       @keyframes 规定动画
+      animation 所有动画属性的简写属性
+      animation-name 
+      animation-duration
+      animation-timing-function
+      animation-delay
+      animation-iteration-count
+      animation-direction
+      animation-play-state
+      animation-fill-mode */
+
+      @keyframes pulse {
+        0% {
+        }
+        70% {
+          /* 如果不写宽高，采用transform: scale(5)这种的话，会让阴影也变大，效果不好 */
+          width: 40px;
+          height: 40px;
+          opacity: 1;
+          /* 这个阶段只是放大 */
+        }
+        100% {
+          width: 70px;
+          height: 70px;
+          opacity: 0;
+          /* 这里放大的同时，透明度降为0 */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="map">
+      <div class="city">
+        <div class="dotted"></div>
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="pulse3"></div>
+      </div>
+      <div class="city tb">
+        <div class="dotted"></div>
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="pulse3"></div>
+      </div>
+    </div>
+  </body>
+</html>

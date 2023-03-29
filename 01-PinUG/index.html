@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TDK三大标签，对网站进行SEO优化(搜索引擎优化)，前端需要准备好容器，SEO人员写内容 -->
+    <!-- title里面：网站名（产品名）-网站介绍（不超过30个汉字） -->
+    <title>品优购商城-综合网购首选-正品低价、品质保障</title>
+    <!-- description介绍网站是主要做什么的，是对网站总体业务和主题的概括，多采用“我们是..”，“我们提供...”，“XXX网站作为...”，“电话：...” -->
+    <meta
+      name="description"
+      content="京东JD.COM-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。"
+    />
+    <!-- keywords最好是6-8个，英文逗号分隔，越靠前权重越高 -->
+    <meta
+      name="Keywords"
+      content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,京东"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 48*48是京东的格式，323*32也可以 -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- 鼠标对应的图标 -->
+    <img src="images/info.png" alt="" class="mouse" />
+    <!-- shortcut快捷导航 -->
+    <section class="shortcut">
+      <div class="w">
+        <div class="fl">
+          <ul>
+            <li>品优购欢迎您！&nbsp;</li>
+            <li>
+              <a href="#">请登录&nbsp;</a
+              ><a class="style_red" href="register.html">免费注册</a>
+            </li>
+          </ul>
+        </div>
+        <div class="fr">
+          <ul>
+            <li>我的订单</li>
+            <li></li>
+            <li class="arrow-icon">我的品优购</li>
+            <li></li>
+            <li>品优购会员</li>
+            <li></li>
+            <li>企业采购</li>
+            <li></li>
+            <li class="arrow-icon">关注品优购</li>
+            <li></li>
+            <li class="arrow-icon">客户服务</li>
+            <li></li>
+            <li class="arrow-icon">网站导航</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- shortcut over -->
+    <!-- 头部制作 -->
+    <header class="header w">
+      <!-- logo优化，加一个h1标签，放一个可以返回首页的链接，链接里面放网站的名称，并添加一个title属性 -->
+      <div class="logo">
+        <h1><a href="index.html" title="品优购商城">品优购商城</a></h1>
+      </div>
+      <!-- 搜索模块search -->
+      <div class="search">
+        <div class="con">123</div>
+        <input type="search" name="" id="" value="语言开发" class="jd" />
+        <button>搜索</button>
+      </div>
+      <!-- 热点词 -->
+      <div class="hotwords">
+        <a href="#" class="style_red">优惠首发</a><a href="#">亿元优惠</a
+        ><a href="#">9.9元团购</a><a href="#">满99-30</a><a href="#">办公用品</a
+        ><a href="#">电脑</a><a href="#">通信</a>
+      </div>
+      <!-- 购物车 -->
+      <div class="shopcar">
+        我的购物车
+        <i class="count">8</i>
+        <!-- 放购物车个数的盒子 -->
+      </div>
+    </header>
+    <!-- header over  -->
+    <!-- nav start  -->
+    <nav class="nav">
+      <div class="w">
+        <div class="dropdown fl">
+          <div class="dt">全部商品分类</div>
+          <!-- .dt可以直接构建上面的，省去了div.dt这么写 -->
+          <div class="dd">
+            <ul>
+              <li><a href="#">家用电器</a></li>
+              <li>
+                <a href="list.html">手机、数码、通讯</a>
+              </li>
+              <li>
+                <a href="#">手机、数码、通讯</a>
+              </li>
+              <li>
+                <a href="#">手机、数码、通讯</a>
+              </li>
+              <li>
+                <a href="#">手机、数码、通讯</a>
+              </li>
+              <li>
+                <a href="#">手机、数码、通讯</a>
+              </li>
+              <li>
+                <a href="#">手机、数码、通讯</a>
+              </li>
+              <li>
+                <a href="#">手机、数码、通讯</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navitems fl">
+          <ul>
+            <li><a href="#">服装城</a></li>
+            <li><a href="#">服装城</a></li>
+            <li><a href="#">服装城</a></li>
+            <li><a href="#">服装城</a></li>
+            <li><a href="#">服装城</a></li>
+            <li><a href="#">服装城</a></li>
+            <li><a href="#">服装城</a></li>
+            <li><a href="#">服装城</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav over  -->
+    <!-- 首页专有模块 main start  -->
+    <div class="main w">
+      <div class="focus">
+        <ul>
+          <li><img src="upload/focus.jpg" alt="" /></li>
+        </ul>
+      </div>
+      <div class="newsflash">
+        <div class="news">
+          <div class="news-hd">
+            <h5 class="fl">品优购快报</h5>
+            <a href="#" class="more">更多</a>
+          </div>
+          <div class="news-bd">
+            <ul>
+              <li>
+                <a href="#">
+                  <strong>【特惠】</strong> 商品服务商品服务1234dgddggg34568</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <strong>【特惠】</strong> 商品服务商品服务12345678</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <strong>【特惠】</strong> 商品服务商品服务12345678</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <strong>【特惠】</strong> 商品服务商品服务12345678</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <strong>【特惠】</strong> 商品服务商品服务12345678</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lifeservice">
+          <ul>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+            <li>
+              <i></i>
+              <p>话费</p>
+            </li>
+          </ul>
+        </div>
+        <div class="bargain"><img src="upload/bargain.jpg" alt="" /></div>
+      </div>
+    </div>
+    <!-- main over  -->
+    <!-- 推荐模块 recommend -->
+    <div class="w recom">
+      <div class="recom-hd fl">
+        <img src="images/clock.png" alt="" />
+        <h3>今日推荐</h3>
+        <span class="hour">1</span>
+        <span class="minute">2</span>
+        <span class="second">3</span>
+      </div>
+      <div class="recom-bd fl">
+        <ul>
+          <li><img src="upload/pic.jpg" alt="" /></li>
+          <li><img src="upload/pic.jpg" alt="" /></li>
+          <li><img src="upload/pic.jpg" alt="" /></li>
+          <li><img src="upload/pic.jpg" alt="" /></li>
+        </ul>
+      </div>
+    </div>
+    <!-- recommend over  -->
+    <!-- 楼层区,点击左侧可以跳转不同的楼层 floor start  -->
+    <div class="floor">
+      <!-- 一楼 家用电器 -->
+      <div class="w HomeApp">
+        <div class="box-hd">
+          <h3>家用电器</h3>
+          <!-- tab栏切换，选项与内容一一对应 -->
+          <div class="tab_list">
+            <ul>
+              <li class="current"><em>热门</em>|</li>
+              <li><em>热门</em>|</li>
+              <li><em>热门</em>|</li>
+              <li><em>热门</em>|</li>
+              <li><em>热门</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-bd">
+          <div class="tab_content">
+            <!-- 内容1 -->
+            <!-- 设置只显示第一个 -->
+            <div class="tab_list_item" style="display: block">
+              <div class="col_210">
+                <ul>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                </ul>
+                <a href="#">
+                  <img src="upload/floor-1-1.png" alt="" />
+                </a>
+              </div>
+              <div class="col_329">
+                <a href="#">
+                  <img src="upload/floor-1-b01.png" alt="" />
+                </a>
+              </div>
+              <div class="col_221">
+                <a href="#" class="bb"
+                  ><img src="upload/floor-1-2.png" alt=""
+                /></a>
+                <a href="#"><img src="upload/floor-1-3.png" alt="" /></a>
+              </div>
+              <div class="col_221">
+                <a href="#"><img src="upload/floor-1-4.png" alt="" /></a>
+              </div>
+              <div class="col_219">
+                <a href="#" class="bb"
+                  ><img src="upload/floor-1-6.png" alt=""
+                /></a>
+                <a href="#"><img src="upload/floor-1-6.png" alt="" /></a>
+              </div>
+            </div>
+            <!-- 内容2 -->
+            <div class="tab_list_item">
+              <div class="col_210">
+                <ul>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                </ul>
+                <a href="#">
+                  <img src="upload/floor-1-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- 内容3 -->
+            <div class="tab_list_item">
+              <div class="col_329">
+                <a href="#">
+                  <img src="upload/floor-1-b01.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- 内容4 -->
+            <div class="tab_list_item">
+              <div class="col_221">
+                <a href="#" class="bb"
+                  ><img src="upload/floor-1-2.png" alt=""
+                /></a>
+                <a href="#"><img src="upload/floor-1-3.png" alt="" /></a>
+              </div>
+            </div>
+            <!-- 内容5 -->
+            <div class="tab_list_item">
+              <div class="col_219">
+                <a href="#" class="bb"
+                  ><img src="upload/floor-1-6.png" alt=""
+                /></a>
+                <a href="#"><img src="upload/floor-1-6.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 二楼 手机通讯 -->
+      <div class="w Phone">
+        <div class="box-hd">
+          <h3>手机通讯</h3>
+          <!-- tab栏切换，选项与内容一一对应 -->
+          <div class="tab_list">
+            <ul>
+              <li><a href="#" class="style_red">热门</a>|</li>
+              <li><a href="#">热门</a>|</li>
+              <li><a href="#">热门</a>|</li>
+              <li><a href="#">热门</a>|</li>
+              <li><a href="#">热门</a>|</li>
+              <li><a href="#">热门</a>|</li>
+              <li><a href="#">热门</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-bd">
+          <div class="tab_content">
+            <!-- 内容1 -->
+            <div class="tab_list_item">
+              <div class="col_210">
+                <ul>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                </ul>
+                <a href="#">
+                  <img src="upload/floor-1-1.png" alt="" />
+                </a>
+              </div>
+              <div class="col_329">
+                <a href="#">
+                  <img src="upload/floor-1-b01.png" alt="" />
+                </a>
+              </div>
+              <div class="col_221">
+                <a href="#" class="bb"
+                  ><img src="upload/floor-1-2.png" alt=""
+                /></a>
+                <a href="#"><img src="upload/floor-1-3.png" alt="" /></a>
+              </div>
+              <div class="col_221">
+                <a href="#"><img src="upload/floor-1-4.png" alt="" /></a>
+              </div>
+              <div class="col_219">
+                <a href="#" class="bb"
+                  ><img src="upload/floor-1-6.png" alt=""
+                /></a>
+                <a href="#"><img src="upload/floor-1-6.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 三楼 个护健康 -->
+      <div class="w Health">
+        <div class="box-hd">
+          <h3>个护健康</h3>
+          <!-- tab栏切换，选项与内容一一对应 -->
+          <div class="tab_list">
+            <ul>
+              <li><a href="#" class="style_red">热门</a>|</li>
+              <li><a href="#">热门</a>|</li>
+              <li><a href="#">热门</a>|</li>
+              <li><a href="#">热门</a>|</li>
+              <li><a href="#">热门</a>|</li>
+              <li><a href="#">热门</a>|</li>
+              <li><a href="#">热门</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-bd">
+          <div class="tab_content">
+            <!-- 内容1 -->
+            <div class="tab_list_item">
+              <div class="col_210">
+                <ul>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                  <li><a href="#">节能补贴</a></li>
+                </ul>
+                <a href="#">
+                  <img src="upload/floor-1-1.png" alt="" />
+                </a>
+              </div>
+              <div class="col_329">
+                <a href="#">
+                  <img src="upload/floor-1-b01.png" alt="" />
+                </a>
+              </div>
+              <div class="col_221">
+                <a href="#" class="bb"
+                  ><img src="upload/floor-1-2.png" alt=""
+                /></a>
+                <a href="#"><img src="upload/floor-1-3.png" alt="" /></a>
+              </div>
+              <div class="col_221">
+                <a href="#"><img src="upload/floor-1-4.png" alt="" /></a>
+              </div>
+              <div class="col_219">
+                <a href="#" class="bb"
+                  ><img src="upload/floor-1-6.png" alt=""
+                /></a>
+                <a href="#"><img src="upload/floor-1-6.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- floor over  -->
+    <!-- foot制作 -->
+    <footer class="footer">
+      <div class="w">
+        <div class="mod_service">
+          <ul>
+            <li>
+              <h5></h5>
+              <div class="service_text">
+                <h4>正品保证</h4>
+                <p>正品保障，提供发票</p>
+              </div>
+            </li>
+            <li>
+              <h5></h5>
+              <div class="service_text">
+                <h4>正品保证</h4>
+                <p>正品保障，提供发票</p>
+              </div>
+            </li>
+            <li>
+              <h5></h5>
+              <div class="service_text">
+                <h4>正品保证</h4>
+                <p>正品保障，提供发票</p>
+              </div>
+            </li>
+            <li>
+              <h5></h5>
+              <div class="service_text">
+                <h4>正品保证</h4>
+                <p>正品保障，提供发票</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="mod_help">
+          <dl>
+            <dt>服务指南</dt>
+            <dd><a href="#">购物流程</a></dd>
+            <dd><a href="#">会员介绍</a></dd>
+            <dd><a href="#">生活旅行/团购</a></dd>
+            <dd><a href="#">常见问题</a></dd>
+            <dd><a href="#">大家电</a></dd>
+            <dd><a href="#">联系客服</a></dd>
+          </dl>
+          <dl>
+            <dt>服务指南</dt>
+            <dd><a href="#">购物流程</a></dd>
+            <dd><a href="#">会员介绍</a></dd>
+            <dd><a href="#">生活旅行/团购</a></dd>
+            <dd><a href="#">常见问题</a></dd>
+            <dd><a href="#">大家电</a></dd>
+            <dd><a href="#">联系客服</a></dd>
+          </dl>
+          <dl>
+            <dt>服务指南</dt>
+            <dd><a href="#">购物流程</a></dd>
+            <dd><a href="#">会员介绍</a></dd>
+            <dd><a href="#">生活旅行/团购</a></dd>
+            <dd><a href="#">常见问题</a></dd>
+            <dd><a href="#">大家电</a></dd>
+            <dd><a href="#">联系客服</a></dd>
+          </dl>
+          <dl>
+            <dt>服务指南</dt>
+            <dd><a href="#">购物流程</a></dd>
+            <dd><a href="#">会员介绍</a></dd>
+            <dd><a href="#">生活旅行/团购</a></dd>
+            <dd><a href="#">常见问题</a></dd>
+            <dd><a href="#">大家电</a></dd>
+            <dd><a href="#">联系客服</a></dd>
+          </dl>
+          <dl>
+            <dt>服务指南</dt>
+            <dd><a href="#">购物流程</a></dd>
+            <dd><a href="#">会员介绍</a></dd>
+            <dd><a href="#">生活旅行/团购</a></dd>
+            <dd><a href="#">常见问题</a></dd>
+            <dd><a href="#">大家电</a></dd>
+            <dd><a href="#">联系客服</a></dd>
+          </dl>
+          <dl class="help_close">
+            <dt>帮助中心</dt>
+            <dd><img src="images/weixin.png" alt="" />品优购客户端</dd>
+            <i class="closeBtn">X</i>
+          </dl>
+        </div>
+        <div class="mod_copyright">
+          <div class="links">
+            <a href="#">关于我们</a> | <a href="#">联系我们</a> |
+            <a href="#">联系客服</a> | <a href="#">商家入驻</a> |
+            <a href="#">营销中心</a> | <a href="#">手机品优购</a> |
+            <a href="#">友情链接</a> | <a href="#">销售联盟</a> |
+            <a href="#">品优购社区</a> | <a href="#">品优购公益</a> |
+            <a href="#">English Site</a> |
+            <a href="#">Contact U</a>
+          </div>
+          <div class="copyright">
+            地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096
+            电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn<br />
+            京ICP备08001421号京公网安备110108007702
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- foot over  -->
+  </body>
+  <script src="js/common.js"></script>
+  <script src="js/index.js"></script>
+</html>

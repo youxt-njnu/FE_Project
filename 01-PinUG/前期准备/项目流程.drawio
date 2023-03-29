@@ -1,0 +1,82 @@
+<mxfile host="65bd71144e">
+    <diagram id="6KEVORpgqcAd5P5_RCw3" name="第 1 页">
+        <mxGraphModel dx="860" dy="496" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="160" y="250" as="sourcePoint"/>
+                        <mxPoint x="250" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="客户沟通，&lt;br&gt;指定方案" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="225" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="edgeStyle=none;html=1;" parent="1" source="3" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="签订合同" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="225" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;" parent="1" source="6" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="预付定金(30%)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="225" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="edgeStyle=none;html=1;" parent="1" source="9" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="初稿审核" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="225" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="edgeStyle=none;html=1;" parent="1" source="11" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="网页美工制作原型图和psd效果图" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="210" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="edgeStyle=none;html=1;" parent="1" source="14" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="前台页面设计，后台功能开发" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="355" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="edgeStyle=none;html=1;" parent="1" source="18" target="20" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="测试验收" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="355" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="edgeStyle=none;html=1;" parent="1" source="20" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="上线培训" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="355" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="后期维护&lt;br&gt;(半年~一年)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="355" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="项目经理整体把控" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="80" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="edgeStyle=none;html=1;" parent="1" source="26" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="前端和后端人员" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="340" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="项目名称：品优购&lt;br&gt;项目描述：电商网站，需要完成首页、列表页、注册页&lt;br&gt;目的：学习布局技术、常见效果和周边技术，了解PC端开发流程&lt;br&gt;开发工具：VScode, PS, Chrome&lt;br&gt;技术栈：&lt;br&gt;* H5C3，手动布局&lt;br&gt;* 结构与样式分离，模块化开发（一个功能一个模块，能重复使用，更换方便）&lt;br&gt;* 培养代码规范，代码规范.md&lt;br&gt;&lt;br&gt;项目搭建：&lt;br&gt;项目文件夹：shopping&lt;br&gt;样式类图片文件夹：images&lt;br&gt;产品类图片文件夹：upload，可能会过段时间定时更换&lt;br&gt;样式文件夹：css&lt;br&gt;字体类文件夹：fonts&lt;br&gt;脚本文件夹：js" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="550" width="440" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="CSS:&lt;br&gt;base.css 初始化样式文件&lt;br&gt;common.css 公共样式文件，方便进行模块化&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;favicon图标：&lt;br&gt;1.制作图标：获取到透明图片，利用比特虫把图片转换为图标&lt;br&gt;2.放入根目录，然后引入图标" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="840" width="350" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="常见命名集合&lt;br&gt;快捷导航栏：shortcut&lt;br&gt;头部：header&lt;br&gt;标志：logo&lt;br&gt;购物查：shopcar&lt;br&gt;搜索：search&lt;br&gt;热点词：hotwords&lt;br&gt;导航：nav&lt;br&gt;导航左侧：dropdown，包括.dd, dt&lt;br&gt;导航右侧：navitems&lt;br&gt;页面底部：footer&lt;br&gt;页面底部服务模块：mod_service&lt;br&gt;页面底部帮助模块：mod_help&lt;br&gt;页面底部版权模块：mod_copyright" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="505" width="210" height="210" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

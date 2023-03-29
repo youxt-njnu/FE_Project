@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        margin: 300px;
+      }
+
+      ul li {
+        float: left;
+        margin: 0 5px;
+        width: 100px;
+        height: 25px;
+        list-style: none;
+        /* 给li写透视，这样box也有透视效果，里面的孩子也有透视效果 */
+        perspective: 500px;
+      }
+
+      .box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        /* 在父亲里面保留3D，下面翻转的效果才能显示出来 */
+        transition: all 1s;
+        /* 设置转换时间 */
+      }
+
+      /* 旋转90度 */
+      .box:hover {
+        transform: rotateX(90deg);
+      }
+
+      .front,
+      .bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .front {
+        background-color: pink;
+        z-index: 1;
+        /* 把front和bottom当成盒子的前面和底面 */
+        transform: translateZ(12.5px);
+      }
+
+      .bottom {
+        background-color: red;
+        /* x轴是负值，然后设置为-80来测试效果 */
+        /* 如果有移动或者其他样式，必须先写移动 */
+        transform: translateY(12.5px) rotateX(-80deg);
+        /* 盒子往下走一半的宽度，到底下来 */
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <!-- li的导航栏 -->
+      <li>
+        <!-- box是翻转的盒子 -->
+        <div class="box">
+          <!-- .front+.bottom  -->
+          <div class="front"></div>
+          <div class="bottom"></div>
+        </div>
+      </li>
+      <li>
+        <!-- box是翻转的盒子 -->
+        <div class="box">
+          <!-- .front+.bottom  -->
+          <div class="front"></div>
+          <div class="bottom"></div>
+        </div>
+      </li>
+      <li>
+        <!-- box是翻转的盒子 -->
+        <div class="box">
+          <!-- .front+.bottom  -->
+          <div class="front"></div>
+          <div class="bottom"></div>
+        </div>
+      </li>
+      <li>
+        <!-- box是翻转的盒子 -->
+        <div class="box">
+          <!-- .front+.bottom  -->
+          <div class="front"></div>
+          <div class="bottom"></div>
+        </div>
+      </li>
+      <li>
+        <!-- box是翻转的盒子 -->
+        <div class="box">
+          <!-- .front+.bottom  -->
+          <div class="front"></div>
+          <div class="bottom"></div>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
